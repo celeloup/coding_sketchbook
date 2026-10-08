@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding Sketchbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js" defer></script>
+  <script type="module" src="book.js"></script>
+</head>
+<body>
+  <main class="desk">
+    <a class="to-contents" href="#/">Contents</a>
+    <button class="nav prev" type="button" aria-label="Previous page">‹</button>
+    <div class="book">
+      <section class="page left"></section>
+      <section class="page right"></section>
+    </div>
+    <button class="nav next" type="button" aria-label="Next page">›</button>
+  </main>
+
+  <!-- The cover's left page. Edit freely. -->
+  <template id="cover">
+    <div class="cover">
+      <h1>Coding Sketchbook</h1>
+      <p class="intro">Small experiments in p5.js, by Celia.</p>
+      <svg class="flourish" viewBox="0 0 200 40" aria-hidden="true">
+        <path d="M5 22 C35 2 60 40 100 20 S165 2 195 22" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </template>
+</body>
+</html>
